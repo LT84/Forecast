@@ -5,4 +5,5 @@ class WeatherModel (
     val weatherName: String,
     val windSpeed: String,
     val pressure: String
+
 )

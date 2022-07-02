@@ -65,21 +65,12 @@ dependencies {
     // https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-livedata-core
     runtimeOnly group: 'androidx.lifecycle', name: 'lifecycle-livedata-core', version: '2.5.0-rc01'
 
-    //Room
-    def roomVersion = "2.4.2"
-    implementation("androidx.room:room-runtime:$roomVersion")
-    // To use Kotlin annotation processing tool (kapt)
-    kapt("androidx.room:room-compiler:$roomVersion")
-    // optional - Kotlin Extensions and Coroutines support for Room
-    implementation("androidx.room:room-ktx:$roomVersion")
-
     // Hilt
     // https://mvnrepository.com/artifact/com.google.dagger/hilt-android
     implementation group: 'com.google.dagger', name: 'hilt-android', version: '2.42'
     // https://mvnrepository.com/artifact/androidx.fragment/fragment-ktx
     runtimeOnly group: 'androidx.fragment', name: 'fragment-ktx', version: '1.5.0-rc01'
     kapt 'com.google.dagger:hilt-compiler:2.42'
-
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
